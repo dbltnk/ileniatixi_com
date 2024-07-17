@@ -7,8 +7,20 @@
     <title>Ilenia Tixi - Consulente Feng Shui a Monaco di Baviera</title>
     <meta name="description"
         content="Scoprite come il Feng Shui può trasformare il vostro spazio e la vostra vita con Ilenia Tixi, consulente Feng Shui a Monaco di Baviera.">
+    <meta name="keywords"
+        content="Feng Shui, consulente Feng Shui, Monaco di Baviera, trasformare spazio, migliorare vita">
+    <meta property="og:title" content="Ilenia Tixi - Consulente Feng Shui a Monaco di Baviera">
+    <meta property="og:description"
+        content="Scoprite come il Feng Shui può trasformare il vostro spazio e la vostra vita con Ilenia Tixi, consulente Feng Shui a Monaco di Baviera.">
+    <meta property="og:image" content="url-to-your-image.jpg">
+    <meta property="og:url" content="your-website-url">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Ilenia Tixi - Consulente Feng Shui a Monaco di Baviera">
+    <meta name="twitter:description"
+        content="Scoprite come il Feng Shui può trasformare il vostro spazio e la vostra vita con Ilenia Tixi, consulente Feng Shui a Monaco di Baviera.">
+    <meta name="twitter:image" content="url-to-your-image.jpg">
     <link
-        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap&display=swap"
         rel="stylesheet">
     <style>
         :root {
@@ -188,6 +200,11 @@
             color: white;
         }
 
+        .language-toggle button[aria-pressed="true"] {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
         ul.services-list {
             padding-left: 20px;
             list-style-type: none;
@@ -289,10 +306,10 @@
                     <li><a href="#about-me" data-de="Über mich" data-en="About Me">Chi Sono</a></li>
                     <li><a href="#contact" data-de="Kontakt" data-en="Contact">Contatti</a></li>
                 </ul>
-                <div class="language-toggle">
-                    <button onclick="changeLanguage('it')">IT</button>
-                    <button onclick="changeLanguage('de')">DE</button>
-                    <button onclick="changeLanguage('en')">EN</button>
+                <div class="language-toggle" role="group" aria-label="Language Toggle">
+                    <button onclick="changeLanguage('it')" aria-pressed="true" aria-label="Italian">IT</button>
+                    <button onclick="changeLanguage('de')" aria-pressed="false" aria-label="German">DE</button>
+                    <button onclick="changeLanguage('en')" aria-pressed="false" aria-label="English">EN</button>
                 </div>
             </nav>
         </div>
@@ -314,7 +331,7 @@
                     data-en="Discover how I can help you">Scoprite come posso aiutarvi</a>
             </section>
 
-            <div class="image-placeholder cover">
+            <div class="image-placeholder cover" alt="Placeholder image for cover">
                 Immagine di copertina (1160x300px)
             </div>
 
@@ -322,7 +339,7 @@
 
             <section id="about-feng-shui">
                 <h2 data-de="Was ist Feng Shui? 🧭" data-en="What is Feng Shui? 🧭">Cos'è il Feng Shui? 🧭</h2>
-                <div class="image-placeholder feng-shui">
+                <div class="image-placeholder feng-shui" alt="Placeholder image for Feng Shui">
                     Immagine Feng Shui (400x300px)
                 </div>
                 <p data-de="<span class='highlight'>Feng Shui</span> ist eine alte chinesische Praxis, die untersucht, wie die Umgebung unser Wohlbefinden beeinflusst. Es handelt sich nicht um einfachen Aberglauben oder starre Regeln, sondern um eine <i>ausgeklügelte Kunst</i>, die auf der Beobachtung der Auswirkungen des Raums auf Körper und Geist basiert."
@@ -338,6 +355,8 @@
                         class="highlight">sostengono emotivamente e fisicamente</span>, facilitando il raggiungimento
                     dei nostri obiettivi e migliorando la qualità della nostra vita quotidiana.
                 </p>
+                <a href="#contact" class="cta-button" data-de="Erfahren Sie mehr über Feng Shui"
+                    data-en="Learn more about Feng Shui">Scopri di più sul Feng Shui</a>
             </section>
 
             <div class="section-divider"></div>
@@ -377,18 +396,22 @@
                     suggerimenti pratici per trasformare il vostro ambiente.
                 </p>
                 <p data-de="Eine Feng Shui-Beratung ist eine Wachstumserfahrung, die <span class='highlight'>Offenheit für Veränderungen</span> erfordert. Gemeinsam werden wir einen Raum schaffen, der Ihr Wesen und Ihre Ziele widerspiegelt und unterstützt."
-                    data-en="A Feng Shui consultation is a growth experience that requires <span class='highlight'>openness to change</span>. Together, we'll create a space that reflects and supports your essence and your goals.">
+                    data-en="A Feng Shui consultation is a growth experience that requires <span
+
+ class='highlight'>openness to change</span>. Together, we'll create a space that reflects and supports your essence and your goals.">
                     Una consulenza Feng Shui è un'esperienza di crescita che richiede <span class="highlight">apertura
                         al cambiamento</span>. Insieme, creeremo uno spazio che riflette e supporta la vostra essenza e
                     i vostri obiettivi.
                 </p>
+                <a href="#contact" class="cta-button" data-de="Buchen Sie eine kostenlose Beratung"
+                    data-en="Book a free consultation">Prenota una consulenza gratuita</a>
             </section>
 
             <div class="section-divider"></div>
 
             <section id="about-me">
                 <h2 data-de="Über mich 👋" data-en="About Me 👋">Chi Sono 👋</h2>
-                <div class="image-placeholder profile">
+                <div class="image-placeholder profile" alt="Placeholder image for profile picture">
                     Foto di Ilenia (300x300px)
                 </div>
                 <p data-de="Hallo, ich bin <span class='highlight'>Ilenia Tixi</span>, Feng Shui-Beraterin in München. Meine Leidenschaft ist es, Menschen dabei zu helfen, <span class='highlight'>Harmonie</span> zwischen ihrem Raum und ihrem Leben zu schaffen. Durch jahrelanges Studium und Praxis habe ich ein tiefes Verständnis dafür entwickelt, wie die Umgebung unser Wohlbefinden beeinflusst."
@@ -417,6 +440,8 @@
                     qualsiasi domanda o per richiedere una <span class="highlight">consulenza gratuita iniziale</span>.
                 </p>
                 <p>Email: <a href="mailto:info@ileniatixi.com">info@ileniatixi.com</a></p>
+                <a href="mailto:info@ileniatixi.com" class="cta-button" data-de="Kontaktieren Sie mich"
+                    data-en="Contact Me">Contattatemi</a>
             </section>
         </div>
     </main>
@@ -439,22 +464,35 @@
         </div>
     </footer>
 
+    <div id="language-change-announcement" class="sr-only" aria-live="polite"></div>
+
     <script>
-        // Store the original Italian text
-        const originalText = new Map();
+        const originalText = [];
         document.querySelectorAll('[data-en]').forEach((el, index) => {
-            originalText.set(index, el.innerHTML);
+            originalText.push(el.innerHTML);
         });
 
         function changeLanguage(lang) {
             const elements = document.querySelectorAll('[data-en]');
             elements.forEach((el, index) => {
                 if (lang === 'it') {
-                    el.innerHTML = originalText.get(index);
+                    el.innerHTML = originalText[index];
                 } else {
                     el.innerHTML = el.getAttribute('data-' + lang);
                 }
             });
+
             document.documentElement.lang = lang;
+
+            const announcement = document.getElementById('language-change-announcement');
+            const langText = lang === 'it' ? 'Italian' : lang === 'de' ? 'German' : 'English';
+            announcement.textContent = `Language changed to ${langText}`;
+
+            document.querySelectorAll('.language-toggle button').forEach(button => {
+                button.setAttribute('aria-pressed', button.getAttribute('onclick').includes(lang));
+            });
         }
     </script>
+</body>
+
+</html>
