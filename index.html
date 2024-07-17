@@ -1,0 +1,460 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ilenia Tixi - Consulente Feng Shui a Monaco di Baviera</title>
+    <meta name="description"
+        content="Scoprite come il Feng Shui può trasformare il vostro spazio e la vostra vita con Ilenia Tixi, consulente Feng Shui a Monaco di Baviera.">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Roboto:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <style>
+        :root {
+            --primary-color: #f4e1d2;
+            --secondary-color: #f9f3ee;
+            --accent-color: #4a6670;
+            --text-color: #333;
+            --light-text-color: #666;
+        }
+
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.6;
+            color: var(--text-color);
+            scroll-behavior: smooth;
+            background-color: var(--secondary-color);
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        header {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-right: 25px;
+        }
+
+        nav ul li:last-child {
+            margin-right: 0;
+        }
+
+        nav ul li a {
+            color: var(--text-color);
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: var(--accent-color);
+        }
+
+        main {
+            padding: 30px 0;
+        }
+
+        section {
+            margin-bottom: 60px;
+            overflow: hidden;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: 'Playfair Display', serif;
+            color: var(--accent-color);
+            margin-bottom: 30px;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: 2.8em;
+        }
+
+        h2 {
+            font-size: 2.3em;
+        }
+
+        h3 {
+            font-size: 1.8em;
+        }
+
+        p {
+            margin-bottom: 20px;
+            max-width: 70ch;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--accent-color);
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            transition: background-color 0.3s ease;
+            font-weight: 500;
+        }
+
+        .cta-button:hover {
+            background-color: #3a515a;
+        }
+
+        .image-placeholder {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px 0;
+            color: white;
+            font-size: 14px;
+            text-align: center;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        .image-placeholder.cover {
+            width: 100%;
+            height: 300px;
+            background-color: #7a9eb1;
+        }
+
+        .image-placeholder.profile {
+            width: 300px;
+            height: 300px;
+            background-color: #b17a8f;
+            float: right;
+            margin: 0 0 20px 20px;
+        }
+
+        .image-placeholder.feng-shui {
+            width: 400px;
+            height: 300px;
+            background-color: #8fb17a;
+            float: right;
+            margin: 0 0 20px 20px;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            padding: 20px 0;
+            text-align: center;
+            color: var(--light-text-color);
+        }
+
+        .language-toggle {
+            display: flex;
+        }
+
+        .language-toggle button {
+            background-color: transparent;
+            color: var(--accent-color);
+            border: 1px solid var(--accent-color);
+            padding: 5px 10px;
+            margin-left: 5px;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .language-toggle button:hover {
+            background-color: var(--accent-color);
+            color: white;
+        }
+
+        ul.services-list {
+            padding-left: 20px;
+            list-style-type: none;
+        }
+
+        ul.services-list li {
+            margin-bottom: 3px;
+            position: relative;
+        }
+
+        ul.services-list li::before {
+            content: "•";
+            color: var(--accent-color);
+            font-weight: bold;
+            display: inline-block;
+            width: 1em;
+            margin-left: -1em;
+            position: absolute;
+            left: -5px;
+        }
+
+        .section-divider {
+            height: 1px;
+            background-color: var(--accent-color);
+            opacity: 0.2;
+            margin: 40px 0;
+            clear: both;
+        }
+
+        .highlight {
+            font-weight: bold;
+            color: var(--accent-color);
+        }
+
+        .footer-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-content p {
+            margin: 0 10px;
+        }
+
+        @media (max-width: 768px) {
+            nav {
+                flex-direction: column;
+            }
+
+            nav ul {
+                margin-top: 20px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            nav ul li {
+                margin: 0 10px 10px 10px;
+            }
+
+            .language-toggle {
+                margin-top: 20px;
+            }
+
+            h1 {
+                font-size: 2.3em;
+            }
+
+            h2 {
+                font-size: 2em;
+            }
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            .image-placeholder.profile,
+            .image-placeholder.feng-shui {
+                float: none;
+                margin: 20px auto;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 
+    IMPORTANT: Italian is the authoritative master language for this website.
+    All translations are based on the Italian content.
+    -->
+    <header>
+        <div class="container">
+            <nav>
+                <ul>
+                    <li><a href="#home" data-de="Startseite" data-en="Home">Home</a></li>
+                    <li><a href="#about-feng-shui" data-de="Über Feng Shui" data-en="About Feng Shui">Il Feng Shui</a>
+                    </li>
+                    <li><a href="#services" data-de="Leistungen" data-en="Services">Servizi</a></li>
+                    <li><a href="#about-me" data-de="Über mich" data-en="About Me">Chi Sono</a></li>
+                    <li><a href="#contact" data-de="Kontakt" data-en="Contact">Contatti</a></li>
+                </ul>
+                <div class="language-toggle">
+                    <button onclick="changeLanguage('it')">IT</button>
+                    <button onclick="changeLanguage('de')">DE</button>
+                    <button onclick="changeLanguage('en')">EN</button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <h1 data-de="Willkommen in der Welt des Feng Shui 🌿" data-en="Welcome to the World of Feng Shui 🌿">
+                    Benvenuti nel Mondo del Feng Shui 🌿</h1>
+                <p data-de="Stellen Sie sich einen Raum vor, der Sie <span class='highlight'>unterstützt</span>, <span class='highlight'>inspiriert</span> und Ihnen hilft, <span class='highlight'>Ihre Träume zu verwirklichen</span>. Mit Feng Shui können wir Ihre Umgebung umgestalten, um jeden Aspekt Ihres Lebens zu verbessern: Gesundheit, Beziehungen, Karriere und persönliches Wachstum."
+                    data-en="Imagine a space that <span class='highlight'>supports</span> you, <span class='highlight'>inspires</span> you, and helps you <span class='highlight'>realize your dreams</span>. With Feng Shui, we can transform your environment to improve every aspect of your life: health, relationships, career, and personal growth.">
+                    Immaginate uno spazio che vi <span class="highlight">sostiene</span>, vi <span
+                        class="highlight">ispira</span> e vi aiuta a <span class="highlight">realizzare i vostri
+                        sogni</span>. Con il Feng Shui, possiamo trasformare il vostro ambiente per migliorare ogni
+                    aspetto della vostra vita: salute, relazioni, carriera e crescita personale.
+                </p>
+                <a href="#contact" class="cta-button" data-de="Entdecken Sie, wie ich Ihnen helfen kann"
+                    data-en="Discover how I can help you">Scoprite come posso aiutarvi</a>
+            </section>
+
+            <div class="image-placeholder cover">
+                Immagine di copertina (1160x300px)
+            </div>
+
+            <div class="section-divider"></div>
+
+            <section id="about-feng-shui">
+                <h2 data-de="Was ist Feng Shui? 🧭" data-en="What is Feng Shui? 🧭">Cos'è il Feng Shui? 🧭</h2>
+                <div class="image-placeholder feng-shui">
+                    Immagine Feng Shui (400x300px)
+                </div>
+                <p data-de="<span class='highlight'>Feng Shui</span> ist eine alte chinesische Praxis, die untersucht, wie die Umgebung unser Wohlbefinden beeinflusst. Es handelt sich nicht um einfachen Aberglauben oder starre Regeln, sondern um eine <i>ausgeklügelte Kunst</i>, die auf der Beobachtung der Auswirkungen des Raums auf Körper und Geist basiert."
+                    data-en="<span class='highlight'>Feng Shui</span> is an ancient Chinese practice that studies how the environment influences our well-being. It's not about simple superstitions or rigid rules, but a <i>sophisticated art</i> based on observing the effects of space on body and mind.">
+                    Il <span class="highlight">Feng Shui</span> è un'antica pratica cinese che studia come l'ambiente
+                    influenza il nostro benessere. Non si tratta di semplici superstizioni o regole rigide, ma di
+                    un'<i>arte sofisticata</i> basata sull'osservazione degli effetti dello spazio sul corpo e la mente
+                    umana.
+                </p>
+                <p data-de="Durch die Anwendung der Prinzipien des Feng Shui können wir Umgebungen schaffen, die uns <span class='highlight'>emotional und physisch unterstützen</span>, die Erreichung unserer Ziele erleichtern und die Qualität unseres täglichen Lebens verbessern."
+                    data-en="By applying the principles of Feng Shui, we can create environments that <span class='highlight'>support us emotionally and physically</span>, facilitating the achievement of our goals and improving the quality of our daily life.">
+                    Applicando i principi del Feng Shui, possiamo creare ambienti che ci <span
+                        class="highlight">sostengono emotivamente e fisicamente</span>, facilitando il raggiungimento
+                    dei nostri obiettivi e migliorando la qualità della nostra vita quotidiana.
+                </p>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="services">
+                <h2 data-de="Meine Leistungen 🌟" data-en="My Services 🌟">I Miei Servizi 🌟</h2>
+                <p data-de="Ich biete maßgeschneiderte Feng Shui-Beratungen, um Ihnen zu helfen:"
+                    data-en="I offer personalized Feng Shui consultations to help you:">Offro consulenze Feng Shui
+                    personalizzate per aiutarvi a:</p>
+                <ul class="services-list">
+                    <li data-de="<span class='highlight'>Verbessern</span> Sie Ihre beruflichen Möglichkeiten und Ihren Wohlstand"
+                        data-en="<span class='highlight'>Improve</span> job opportunities and prosperity"><span
+                            class="highlight">Migliorare</span> le opportunità lavorative e la prosperità</li>
+                    <li data-de="<span class='highlight'>Steigern</span> Sie Ihre geistige Klarheit und Motivation"
+                        data-en="<span class='highlight'>Increase</span> mental clarity and motivation"><span
+                            class="highlight">Aumentare</span> la chiarezza mentale e la motivazione</li>
+                    <li data-de="<span class='highlight'>Stärken</span> Sie Ihre familiären und partnerschaftlichen Beziehungen"
+                        data-en="<span class='highlight'>Strengthen</span> family and couple relationships"><span
+                            class="highlight">Rafforzare</span> le relazioni familiari e di coppia</li>
+                    <li data-de="<span class='highlight'>Steigern</span> Sie Ihre Energie und Vitalität"
+                        data-en="<span class='highlight'>Boost</span> energy and vitality"><span
+                            class="highlight">Potenziare</span> l'energia e la vitalità</li>
+                    <li data-de="<span class='highlight'>Fördern</span> Sie eine bessere Gesundheit"
+                        data-en="<span class='highlight'>Promote</span> better health"><span
+                            class="highlight">Favorire</span> una salute più solida</li>
+                    <li data-de="<span class='highlight'>Stärken</span> Sie Ihr Selbstwertgefühl und Selbstvertrauen"
+                        data-en="<span class='highlight'>Enhance</span> self-esteem and self-confidence"><span
+                            class="highlight">Accrescere</span> l'autostima e la fiducia in se stessi</li>
+                </ul>
+                <h3 data-de="Wie läuft eine Beratung ab? 📅" data-en="How does a consultation work? 📅">Come si svolge
+                    una consulenza? 📅</h3>
+                <p data-de="Der Prozess beginnt mit einem <span class='highlight'>kostenlosen Gespräch</span>, um Ihre Bedürfnisse zu verstehen. Es folgt eine gründliche Analyse Ihres Raums, wobei sowohl physische als auch energetische Aspekte berücksichtigt werden. Nach einigen Wochen erhalten Sie einen <i>detaillierten Bericht</i> mit praktischen Vorschlägen zur Umgestaltung Ihrer Umgebung."
+                    data-en="The process begins with a <span class='highlight'>free consultation</span> to understand your needs. This is followed by an in-depth analysis of your space, considering both physical and energetic aspects. After a few weeks, you'll receive a <i>detailed report</i> with practical suggestions to transform your environment.">
+                    Il processo inizia con un <span class="highlight">colloquio gratuito</span> per comprendere le
+                    vostre esigenze. Seguirà un'analisi approfondita del vostro spazio, considerando sia gli aspetti
+                    fisici che energetici. Dopo alcune settimane, riceverete una <i>relazione dettagliata</i> con
+                    suggerimenti pratici per trasformare il vostro ambiente.
+                </p>
+                <p data-de="Eine Feng Shui-Beratung ist eine Wachstumserfahrung, die <span class='highlight'>Offenheit für Veränderungen</span> erfordert. Gemeinsam werden wir einen Raum schaffen, der Ihr Wesen und Ihre Ziele widerspiegelt und unterstützt."
+                    data-en="A Feng Shui consultation is a growth experience that requires <span class='highlight'>openness to change</span>. Together, we'll create a space that reflects and supports your essence and your goals.">
+                    Una consulenza Feng Shui è un'esperienza di crescita che richiede <span class="highlight">apertura
+                        al cambiamento</span>. Insieme, creeremo uno spazio che riflette e supporta la vostra essenza e
+                    i vostri obiettivi.
+                </p>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="about-me">
+                <h2 data-de="Über mich 👋" data-en="About Me 👋">Chi Sono 👋</h2>
+                <div class="image-placeholder profile">
+                    Foto di Ilenia (300x300px)
+                </div>
+                <p data-de="Hallo, ich bin <span class='highlight'>Ilenia Tixi</span>, Feng Shui-Beraterin in München. Meine Leidenschaft ist es, Menschen dabei zu helfen, <span class='highlight'>Harmonie</span> zwischen ihrem Raum und ihrem Leben zu schaffen. Durch jahrelanges Studium und Praxis habe ich ein tiefes Verständnis dafür entwickelt, wie die Umgebung unser Wohlbefinden beeinflusst."
+                    data-en="Hello, I'm <span class='highlight'>Ilenia Tixi</span>, a Feng Shui consultant in Munich. My passion is helping people create <span class='highlight'>harmony</span> between their space and their life. Through years of study and practice, I've developed a deep understanding of how the environment influences our well-being.">
+                    Ciao, sono <span class="highlight">Ilenia Tixi</span>, consulente Feng Shui a Monaco di Baviera. La
+                    mia passione è aiutare le persone a creare <span class="highlight">armonia</span> tra il loro spazio
+                    e la loro vita. Con anni di studio e pratica, ho sviluppato una profonda comprensione di come
+                    l'ambiente influenzi il nostro benessere.
+                </p>
+                <p data-de="Mein Ansatz kombiniert die <i>alte Weisheit</i> des Feng Shui mit einem <i>modernen Gespür</i> und bietet praktische und maßgeschneiderte Lösungen für jeden Kunden. Ich glaube, dass jeder Raum das Potenzial hat, seine Bewohner zu unterstützen und zu inspirieren, und meine Mission ist es, Ihnen zu helfen, dieses Potenzial zu entfalten."
+                    data-en="My approach combines the <i>ancient wisdom</i> of Feng Shui with a <i>modern sensibility</i>, offering practical and personalized solutions for each client. I believe that every space has the potential to support and inspire those who inhabit it, and my mission is to help you unlock this potential.">
+                    Il mio approccio combina la <i>saggezza antica</i> del Feng Shui con una <i>sensibilità moderna</i>,
+                    offrendo soluzioni pratiche e personalizzate per ogni cliente. Credo che ogni spazio abbia il
+                    potenziale per sostenere e ispirare chi lo abita, e la mia missione è aiutarvi a sbloccare questo
+                    potenziale.
+                </p>
+            </section>
+
+            <div class="section-divider"></div>
+
+            <section id="contact">
+                <h2 data-de="Kontaktieren Sie mich 📞" data-en="Contact Me 📞">Contattatemi 📞</h2>
+                <p data-de="Sind Sie bereit, Ihren Raum und Ihr Leben zu verändern? Zögern Sie nicht, mich für Fragen zu kontaktieren oder eine <span class='highlight'>kostenlose Erstberatung</span> anzufordern."
+                    data-en="Are you ready to transform your space and your life? Don't hesitate to contact me for any questions or to request a <span class='highlight'>free initial consultation</span>.">
+                    Siete pronti a trasformare il vostro spazio e la vostra vita? Non esitate a contattarmi per
+                    qualsiasi domanda o per richiedere una <span class="highlight">consulenza gratuita iniziale</span>.
+                </p>
+                <p>Email: <a href="mailto:info@ileniatixi.com">info@ileniatixi.com</a></p>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <p data-de="© 2024 Ilenia Tixi - Alle Rechte vorbehalten"
+                    data-en="© 2024 Ilenia Tixi - All rights reserved">&copy; 2024 Ilenia Tixi - Tutti i diritti
+                    riservati</p>
+                <p data-de="Ilenia Tixi | Feng Shui Beraterin" data-en="Ilenia Tixi | Feng Shui Consultant">Ilenia Tixi
+                    | Consulente Feng Shui</p>
+                <p data-de="Franz-Joseph Strasse 19, 80801 München" data-en="Franz-Joseph Strasse 19, 80801 Munich">
+                    Franz-Joseph Strasse 19, 80801 München</p>
+                <p data-de="E-Mail: info@ileniatixi.com | Tel: +49 123 456789"
+                    data-en="Email: info@ileniatixi.com | Tel: +49 123 456789">Email: info@ileniatixi.com | Tel: +49 123
+                    456789</p>
+                <p data-de="USt-IdNr: DE123456789" data-en="VAT ID: DE123456789">P.IVA: DE123456789</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Store the original Italian text
+        const originalText = new Map();
+        document.querySelectorAll('[data-en]').forEach((el, index) => {
+            originalText.set(index, el.innerHTML);
+        });
+
+        function changeLanguage(lang) {
+            const elements = document.querySelectorAll('[data-en]');
+            elements.forEach((el, index) => {
+                if (lang === 'it') {
+                    el.innerHTML = originalText.get(index);
+                } else {
+                    el.innerHTML = el.getAttribute('data-' + lang);
+                }
+            });
+            document.documentElement.lang = lang;
+        }
+    </script>

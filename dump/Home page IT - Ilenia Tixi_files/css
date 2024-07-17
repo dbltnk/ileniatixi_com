@@ -1,0 +1,77 @@
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizMREVItHgc8qDIbSTKq4XkRiUawTk7f45UM9y05oYiRODFR-M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizMREVItHgc8qDIbSTKq4XkRiUawTk7f45UM9y05oZ8RODFR-M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 600;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizMREVItHgc8qDIbSTKq4XkRiUawTk7f45UM9y05oaiQ-DFR-M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: italic;
+  font-weight: 800;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizMREVItHgc8qDIbSTKq4XkRiUawTk7f45UM9y05ob8Q-DFR-M.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 300;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduhcMWkDtDM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 400;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduhLsWkDtDM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 600;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduh8MKkDtDM.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Libre Franklin';
+  font-style: normal;
+  font-weight: 800;
+  font-display: fallback;
+  src: url(https://web.archive.org/web/20210801073348im_/https://fonts.gstatic.com/s/librefranklin/v7/jizOREVItHgc8qDIbSTKq4XkRg8T88bjFuXOnduhrsKkDtDM.ttf) format('truetype');
+}
+
+/*
+     FILE ARCHIVED ON 07:33:48 Aug 01, 2021 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 07:53:36 Jul 17, 2024.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.543
+  exclusion.robots: 0.021
+  exclusion.robots.policy: 0.013
+  esindex: 0.009
+  cdx.remote: 12.804
+  LoadShardBlock: 590.96 (6)
+  PetaboxLoader3.datanode: 268.613 (7)
+  PetaboxLoader3.resolve: 529.257 (2)
+  load_resource: 1116.731
+*/
