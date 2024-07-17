@@ -29,6 +29,7 @@
             --accent-color: #4a6670;
             --text-color: #333;
             --light-text-color: #666;
+            --nav-height: 80px;
         }
 
         body,
@@ -39,6 +40,7 @@
             line-height: 1.6;
             color: var(--text-color);
             scroll-behavior: smooth;
+            scroll-padding-top: var(--nav-height);
             background-color: var(--secondary-color);
         }
 
@@ -50,7 +52,7 @@
 
         header {
             background-color: var(--primary-color);
-            padding: 20px 0;
+            padding: 10px 0;
             position: sticky;
             top: 0;
             z-index: 1000;
@@ -61,6 +63,7 @@
             display: flex;
             justify-content: space-between;
             align-items: center;
+            height: var(--nav-height);
         }
 
         nav ul {
@@ -90,11 +93,11 @@
         }
 
         main {
-            padding: 30px 0;
+            padding: 20px 0;
         }
 
         section {
-            margin-bottom: 60px;
+            margin-bottom: 40px;
             overflow: hidden;
         }
 
@@ -103,20 +106,23 @@
         h3 {
             font-family: 'Playfair Display', serif;
             color: var(--accent-color);
-            margin-bottom: 30px;
+            margin-bottom: 20px;
             line-height: 1.2;
         }
 
         h1 {
-            font-size: 2.8em;
+            font-size: 2.5em;
+            margin-top: 20px;
         }
 
         h2 {
-            font-size: 2.3em;
+            font-size: 2em;
+            margin-top: 40px;
         }
 
         h3 {
-            font-size: 1.8em;
+            font-size: 1.5em;
+            margin-top: 30px;
         }
 
         p {
@@ -250,34 +256,49 @@
         }
 
         @media (max-width: 768px) {
+            :root {
+                --nav-height: 120px;
+            }
+
+            header {
+                padding: 10px 0;
+            }
+
             nav {
-                flex-direction: column;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+                height: auto;
             }
 
             nav ul {
-                margin-top: 20px;
+                display: flex;
                 flex-wrap: wrap;
-                justify-content: center;
+                justify-content: flex-start;
+                align-items: center;
+                margin-top: 5px;
+                width: 100%;
             }
 
             nav ul li {
-                margin: 0 10px 10px 10px;
+                margin: 2px 10px 2px 0;
             }
 
             .language-toggle {
-                margin-top: 20px;
+                align-self: flex-start;
+                margin-top: 10px;
             }
 
             h1 {
-                font-size: 2.3em;
+                font-size: 2.2em;
             }
 
             h2 {
-                font-size: 2em;
+                font-size: 1.8em;
             }
 
             h3 {
-                font-size: 1.5em;
+                font-size: 1.3em;
             }
 
             .image-placeholder.profile {
