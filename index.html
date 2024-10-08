@@ -738,8 +738,6 @@
         </div>
     </footer>
 
-    <div id="language-change-announcement" class="sr-only" aria-live="polite"></div>
-
     <script>
         const originalText = [];
         document.querySelectorAll('[data-en]').forEach((el, index) => {
@@ -757,10 +755,6 @@
             });
 
             document.documentElement.lang = lang;
-
-            const announcement = document.getElementById('language-change-announcement');
-            const langText = lang === 'it' ? 'Italian' : lang === 'de' ? 'German' : 'English';
-            announcement.textContent = `Language changed to ${langText}`;
 
             document.querySelectorAll('.language-toggle button').forEach(button => {
                 button.setAttribute('aria-pressed', button.getAttribute('onclick').includes(lang));
